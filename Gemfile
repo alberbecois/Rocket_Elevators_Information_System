@@ -67,3 +67,6 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
 gem 'fontawesome-rails'
+
+gem 'devise'
+gem 'activeadmin'
