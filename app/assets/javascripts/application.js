@@ -12,10 +12,15 @@
 //
 //= require jquery3
 //= require rails-ujs
-//= require bootstrap.min
 //= require activestorage
-//= require turbolinks
-//= require_tree .
+//= require scripts
+//= require plugins/bootstrap/js/bootstrap.min.js
+//= require plugins/owl-carousel/owl.carousel.js
 //= require popper
 //= require bootstrap
-//= require jquery_ujs
+//= require demo.revolution_slider
+//= require plugins/slider.revolution/js/jquery.themepunch.tools.min.js
+//= require plugins/slider.revolution/js/jquery.themepunch.revolution.min
+//= require plugins/slider.revolution/js/jquery.themepunch.revolution.min.js
+//= require contact.js
+//= require scripts.js

@@ -1,0 +1,31 @@
+html * {
+    font-family: 'Roboto', 'FontAwesome' !important;
+  }
+
+.ribbonimage {
+    height: 180px;
+    object-fit: cover;
+  }
+
+.portfolioimage {
+    height: 200px;
+    object-fit: cover;
+  }
+
+.newsimage{
+    height: 180px;
+    object-fit: cover;
+  }
+
+.logoimage{
+    width: 180px;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    object-fit: contain;
+  }
+
+.staffimage{
+    width: 180px;
+    height: 180px;
+  }

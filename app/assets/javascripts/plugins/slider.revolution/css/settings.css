@@ -13,6 +13,7 @@ website:   	http://www.themepunch.com
 
 
 
+
 /*************************
 	-	CAPTIONS	-
 **************************/
@@ -1442,6 +1443,8 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 /*************************************
 	-	TP ARROWS 	-
 **************************************/
+
+/*
 .tparrows												{	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 															-moz-opacity: 1;
 															-khtml-opacity: 1;
@@ -1505,7 +1508,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 
 
 
-
+*/
 
 
 /****************************************************************************************************
@@ -1637,7 +1640,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 	-	NAVIGATION FANCY EXAMPLES	-
 *****************************************/
 
-/* NAVIGATION PREVIEW 1 */
+/* NAVIGATION PREVIEW 1 
 .tparrows.preview1 							{	width:100px;height:100px;-webkit-transform-style: preserve-3d; -webkit-perspective: 1000; -moz-perspective: 1000; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden;background: transparent}
 .tparrows.preview1:after					{	position:absolute; left:0px;top:0px; font-family: "revicons"; color:#fff; font-size:30px; width:100px;height:100px;text-align: center; background:#fff;background:rgba(0,0,0,0.15);z-index:2;line-height:100px; -webkit-transition: background 0.3s, color 0.3s; -moz-transition: background 0.3s, color 0.3s; transition: background 0.3s, color 0.3s}
 .tp-rightarrow.preview1:after				{	content: '\e825';  }
@@ -1703,15 +1706,15 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 		.tparrows.preview1,
 		.tparrows.preview1:after	{	width:40px; height:40px;line-height:40px; font-size:12px}
     }
-
-/* PREVIEW 1 BULLETS */
+*/
+/* PREVIEW 1 BULLETS 
 
 .tp-bullets.preview1 						{ 	height: 21px}
 .tp-bullets.preview1 .bullet 				{	cursor: pointer;
 											    position: relative !important;
 											    background: rgba(0, 0, 0, 0.15) !important;
-											    /*-webkit-border-radius: 10px;
-											    border-radius: 10px;*/
+											    -webkit-border-radius: 10px;
+											    border-radius: 10px;
 											    -webkit-box-shadow: none;
 											    -moz-box-shadow: none;
 											    box-shadow: none;
@@ -1742,10 +1745,10 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 											    border: 8px solid rgba(255, 255, 255, 1) !important;
 }
 
+*/
 
 
-
-/* NAVIGATION PREVIEW 2 */
+/* NAVIGATION PREVIEW 2
 .tparrows.preview2 							{	min-width:60px; min-height:60px; background:#fff; ;
 
 												border-radius:30px;-moz-border-radius:30px;-webkit-border-radius:30px;
@@ -1791,8 +1794,8 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 													visibility: visible;
 													position: absolute;
 											}
-
-/* PREVIEW 2 BULLETS */
+*/
+/* PREVIEW 2 BULLETS 
 
 .tp-bullets.preview2 						{ 	height: 17px}
 .tp-bullets.preview2 .bullet 				{	cursor: pointer;
@@ -1874,7 +1877,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 
 
 
-/* NAVIGATION PREVIEW 3 */
+/* NAVIGATION PREVIEW 3 
 .tparrows.preview3 							{	width:70px; height:70px; background:#fff; background:rgba(255,255,255,1); -webkit-transform-style: flat}
 .tparrows.preview3:after					{	position:absolute;  line-height: 70px;text-align: center; font-family: "revicons"; color:#aaa; font-size:30px; top:0px;left:0px;;background:#fff; z-index:100; width:70px;height:70px; -webkit-transition: color 0.3s; -moz-transition: color 0.3s; transition: color 0.3s}
 .tparrows.preview3:hover:after					{	color:#000}
@@ -1910,8 +1913,8 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 												  transform: scale(1,1);
 
 											}
-
-/* PREVIEW 3 BULLETS */
+*/
+/* PREVIEW 3 BULLETS 
 .tp-bullets.preview3 						{ 	height: 17px}
 .tp-bullets.preview3 .bullet 				{	cursor: pointer;
 											    position: relative !important;
@@ -1969,11 +1972,9 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 		.tparrows.preview3 .tp-arr-iwrapper			{	min-height:70px}
 	}
 
+*/
 
-
-
-
-/* NAVIGATION PREVIEW 4 */
+/* NAVIGATION PREVIEW 4 
 .tparrows.preview4 							{	width:30px; height:110px;  background:transparent;-webkit-transform-style: preserve-3d; -webkit-perspective: 1000; -moz-perspective: 1000}
 .tparrows.preview4:after					{	position:absolute;  line-height: 110px;text-align: center; font-family: "revicons"; color:#fff; font-size:20px; top:0px;left:0px;z-index:0; width:30px;height:110px; background: #000; background: rgba(0,0,0,0.25);
 												-webkit-transition: all 0.2s ease-in-out;
@@ -2059,8 +2060,8 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 
 														}
 }
-
-/* PREVIEW 4 BULLETS */
+*/
+/* PREVIEW 4 BULLETS 
 
 .tp-bullets.preview4 						{ 	height: 17px}
 .tp-bullets.preview4 .bullet 				{	cursor: pointer;
@@ -2109,7 +2110,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
    		 .tparrows.preview4 .tp-arr-allwrapper		{	display: none !important}
     }
 
-
+*/
 
 /******************************
 	-	LOADER FORMS	-
@@ -2336,6 +2337,8 @@ background: transparent;
 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 zoom: 1;
+width: auto;
+height: auto;
 }
 
 
@@ -2434,3 +2437,9 @@ zoom: 1;
 .revicon-equalizer:before { content: '\e83a'} /* '' */
 .revicon-layers-alt:before { content: '\e804'} /* '' */
 .revicon-popup:before { content: '\e828'} /* '' */
+
+
+/*************************
+	-	MY CHANGES     	-
+**************************/
+
