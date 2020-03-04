@@ -1,2 +1,14 @@
 class PagesController < ApplicationController
-end
+    def index
+    end 
+
+    def residential
+    end    
+    
+    def corporate
+    end
+
+    def quote
+    end
+ 
+end    
