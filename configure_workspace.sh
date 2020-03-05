@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ### install correct version of Ruby and rails
-echo "script for initializing workspace with ruby and gems, etc"
+echo "Script for initializing workspace with ruby and gems, etc"
 
 ### install gems (linux-ubuntu style, from apt repository)
 # sudo apt install gems 

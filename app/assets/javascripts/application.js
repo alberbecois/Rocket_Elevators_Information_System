@@ -9,18 +9,19 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//= require bootstrap-sprockets
-//= require jquery3
+//= require jquery
 //= require rails-ujs
 //= require activestorage
 //= require scripts
+//= require demo.revolution_slider
+//= require plugins/slider.revolution/js/jquery.themepunch.tools.min.js
+//= require plugins/slider.revolution/js/jquery.themepunch.revolution.js
+//= require plugins/slider.revolution/js/jquery.themepunch.revolution.min.js
+//= require bootstrap
 //= require plugins/owl-carousel/owl.carousel.js
+//= require plugins/owl-carousel/owl.carousel.min.js
 //= require popper
 //= require bootstrap-sprockets
-//= require bootstrap
-//= require demo.revolution_slider
-//= require plugins/slider.revolution/js/jquery.themepunch.tools.min
-//= require plugins/slider.revolution/js/jquery.themepunch.revolution.min
-//= require plugins/slider.revolution/js/jquery.themepunch.revolution.min.js
-//= require contact.js
-//= require scripts.js
+
+
+
