@@ -73,3 +73,10 @@ gem 'nav'
 gem 'bootstrap-glyphicons'
 gem 'bootstrap-social-rails'
 
+gem 'activeadmin'
+
+# Plus integrations with:
+gem 'devise'
+gem 'cancancan'
+gem 'draper'
+gem 'pundit'
