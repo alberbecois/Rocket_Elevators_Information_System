@@ -48,6 +48,13 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  # capistrano in odyssey program
+  gem 'capistrano', '~> 3.10', require: false
+  gem 'capistrano-rails', '~> 1.4', require: false
+  gem 'capistrano-bundler', '>= 1.1.0'
+  gem 'rvm1-capistrano3', require: false
+  gem 'capistrano3-puma'
 end
 
 group :test do
@@ -68,7 +75,7 @@ gem 'jquery-rails'
 gem 'owlcarousel-rails'
 gem 'owlcarousel-rails'
 gem 'font-awesome-rails'
-gem 'fontawesome-rails'
+gem 'font-awesome-sass'
 gem 'nav'
 gem 'bootstrap-glyphicons'
 gem 'bootstrap-social-rails'
@@ -80,3 +87,4 @@ gem 'devise'
 gem 'cancancan'
 gem 'draper'
 gem 'pundit'
+
