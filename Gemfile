@@ -62,8 +62,14 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-# my stuf for bootstrap, jquery, owlcarousel-rails
+# my stuf for bootstrap, jquery, owlcarousel-rails, and others
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
-gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
+gem 'owlcarousel-rails'
+gem 'owlcarousel-rails'
+gem 'font-awesome-rails'
 gem 'fontawesome-rails'
+gem 'nav'
+gem 'bootstrap-glyphicons'
+gem 'bootstrap-social-rails'
+
