@@ -28,19 +28,26 @@ echo ' '
 echo ' '
 echo ' '
 echo ' '
-echo -e '  `-:::::::                      -::              /++++++++/.                                       '
-echo -e '.oyyyssssss                      oys              dMMMNNNMMMMy                                      '
-echo -e 'oyy+`         .------.     .-----sys    `.---.    dMM+    .NMM`    ``````   -//:   -//:   :::.  `///'
-echo -e 'syy-        `oyyyyyyyys- -syyyyyyyys  :oyysssys/` dMMs////oMMd   .syyyys/+` `yMMh`+MMm.   /NMN:.dMMo'
-echo -e 'syy-        /yy-    .syo`sys.`   oys :yy:.```-yy: dMMMMMMMMMM/  -syyyyo+yyo`  +MysMMy`     .dMM+hN: '
-echo -e 'syy.        /yy`     syo.yy/     oys oyyyyyyyyyy/ dMMo.....yMM+.ooooo++yyyys`  :+MMd        `NMM:-  '
-echo -e 'oyy/``````` :yy-    .yyo`sys.    oys +yy:....```` dMM+`````yMM+ /yyyyy+syys-  oMyoMMh`     .mMN+dN/ '
-echo -e '`+yyyyyyyys `oyyyyyyyys- .syyyyyyyys `+syyyyyyy+  dMMMMMMMMMMh`  :yyyyy+os. `hMM+ -mMN:   /NMd.`sMMs'
-echo -e '  `.-------   .------.`    .--------    ..-----.  :////////:`     .:::::.`  ://-   `///  `///`   ://'
+echo -e '\e[34m  `-:::::::                      -::              \e[39m/++++++++/.\e[34m                                       '
+echo -e '\e[34m.oyyyssssss                      oys              \e[39mdMMMNNNMMMMy\e[34m                                      '
+echo -e '\e[34moyy+`         .------.     .-----sys    `.---.    \e[39mdMM+    .NMM`\e[34m    ``````   \e[39m-//:   -//:   :::.  `///'
+echo -e '\e[34msyy-        `oyyyyyyyys- -syyyyyyyys  :oyysssys/` \e[39mdMMs////oMMd\e[34m   .syyyys/+` \e[39m`yMMh`+MMm.   /NMN:.dMMo'
+echo -e '\e[34msyy-        /yy-    .syo`sys.`   oys :yy:.```-yy: \e[39mdMMMMMMMMMM/\e[34m  -syyyyo+yyo`\e[39m  +MysMMy`     .dMM+hN: '
+echo -e '\e[34msyy.        /yy`     syo.yy/     oys oyyyyyyyyyy/ \e[39mdMMo.....yMM+.\e[34mooooo++yyyys`\e[39m  :+MMd        `NMM:-  '
+echo -e '\e[34moyy/``````` :yy-    .yyo`sys.    oys +yy:....```` \e[39mdMM+`````yMM+\e[34m /yyyyy+syys-  \e[39moMyoMMh`     .mMN+dN/ '
+echo -e '\e[34m`+yyyyyyyys `oyyyyyyyys- .syyyyyyyys `+syyyyyyy+  \e[39mdMMMMMMMMMMh`\e[34m  :yyyyy+os. \e[39m`hMM+ -mMN:   /NMd.`sMMs'
+echo -e '\e[34m  `.-------   .------.`    .--------    ..-----.  \e[39m:////////:`\e[34m     .:::::.`  \e[39m://-   `///  `///`   ://'
 echo ''
 echo ''
 echo ''
 echo ''
+sleep .60
 
+fortune | cowsay
+sleep .3
+
+echo ''
+echo ''
+echo ''
 # Run Rails server
 rails server
