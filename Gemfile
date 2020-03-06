@@ -74,13 +74,13 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'owlcarousel-rails'
 gem 'owlcarousel-rails'
-gem 'font-awesome-rails'
-gem 'font-awesome-sass'
+gem "font-awesome-rails"
+gem 'font-awesome-sass', '~> 5.12.0'
 gem 'nav'
 gem 'bootstrap-glyphicons'
 gem 'bootstrap-social-rails'
-
 gem 'activeadmin'
+gem 'rails_same_site_cookie'
 
 # Plus integrations with:
 gem 'devise'
