@@ -22,6 +22,3 @@
 //= require plugins/owl-carousel/owl.carousel.min.js
 //= require popper
 //= require bootstrap-sprockets
-
-
-
