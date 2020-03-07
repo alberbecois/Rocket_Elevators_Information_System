@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_type: MyString
+  num_elevators: MyString
+  product: MyString
+
+two:
+  project_type: MyString
+  num_elevators: MyString
+  product: MyString

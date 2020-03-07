@@ -161,7 +161,7 @@ $($nextButtons).click(function(){
 });
 
 
-// Final Calculator
+// Final Calculator -- replaced by Heroku app
 /* function updateTotal(){
     var selectedElevator = document.querySelector('input[name="elevatortype"]:checked').value;
     if(selectedElevator === "standard"){
@@ -229,6 +229,27 @@ function getQuote(){
     });
 }
 
+// Generate objects to send to Rails Controller
+function saveQuote(){
+    var selectedElevator = document.querySelector('input[name="elevatortype"]:checked').value;
+    var myCustomer = {
+        "fname":document.getElementById("fname").value,
+        "lname":document.getElementById("lname").value,
+        "email":document.getElementById("email").value,
+        "bname":document.getElementById("bname").value,
+        "primary":document.getElementById("primary").value,
+        "secondary":document.getElementById("secondary").value
+    }
+    var myQuote = {
+        "project_type":selection,
+        "num_elevators":quotedElevators,
+        "product":selectedElevator
+    }
+    var myCustomerID;
+    console.log(myCustomer);
+    console.log(myQuote);
+}
+
 // Displays Final Quote
 
 var isFinalQuoteShowing = false;
@@ -242,4 +263,10 @@ $("#calculate").click(function(){
     else{
         getQuote();
     }
+})
+
+// Save Button Listener
+
+$("#save").click(function(){
+    saveQuote();
 })
