@@ -1,244 +1,251 @@
 
-		<!-- wrapper -->
-		<div id="wrapper">
+<!-- wrapper -->
+<div id="wrapper">
 
-			<div id="header" class="navbar-toggleable-md sticky clearfix">
+	<div id="header" class="navbar-toggleable-md sticky clearfix">
 
-            <!-- TOP NAV -->
-				<header id="topNav">
-					<div class="container">
+	<!-- TOP NAV -->
+		<header id="topNav">
+			<div class="container">
 
-						<!-- Mobile Menu Button -->
-						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
-							<i class="fa fa-bars"></i>
-						</button>
+				<!-- Mobile Menu Button -->
+				<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+					<i class="fa fa-bars"></i>
+				</button>
 
-						<!-- BUTTONS -->
-						<ul class="float-right nav nav-pills nav-second-main">
+				<!-- BUTTONS -->
+				<ul class="float-right nav nav-pills nav-second-main">
 
-						</ul>
-						<!-- /BUTTONS -->
+				</ul>
+				<!-- /BUTTONS -->
 
-						<!-- Logo -->
-						<a class="logo float-left mt-10 mb-10" href="index.html">
-							<img src="assets/R2.png" alt="Rocket Elevator Logo" />
-						</a>
+				<!-- Logo -->
+				<a class="logo float-left mt-10 mb-10" href="index.html">
+					<img src="assets/R2.png" alt="Rocket Elevator Logo" />
+				</a>
+
+				<!--
+					Top Nav
+					AVAILABLE CLASSES:
+					submenu-dark = dark sub menu
+				-->
+				<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark mt-10">
+					<nav class="nav-main">
 
 						<!--
-							Top Nav
-							AVAILABLE CLASSES:
-							submenu-dark = dark sub menu
+							NOTE
+							For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+							Direct Link Example:
+							<li>
+								<a href="#">HOME</a>
+							</li>
 						-->
-						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark mt-10">
-							<nav class="nav-main">
-
-								<!--
-									NOTE
-									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
-									Direct Link Example:
-									<li>
-										<a href="#">HOME</a>
-									</li>
-								-->
-								<ul id="topMain" class="nav nav-pills nav-main">
-									<li>
-										<a href="index.html">
-											HOME
+						<ul id="topMain" class="nav nav-pills nav-main">
+							<li>
+								<a href="index.html">
+									HOME
+								</a>
+							</li>
+							<li class="dropdown active"><!-- PAGES -->
+								<a class="dropdown-toggle" href="./index.html#services">
+									SERVICES
+								</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown">
+										<a href="residential.html">
+											RESIDENTIAL
 										</a>
 									</li>
-									<li class="dropdown active"><!-- PAGES -->
-										<a class="dropdown-toggle" href="./index.html#services">
-											SERVICES
-										</a>
-										<ul class="dropdown-menu">
-											<li class="dropdown">
-												<a href="residential.html">
-													RESIDENTIAL
-												</a>
-											</li>
-											<li class="dropdown">
-												<a href="corporate.html">
-													CORPORATE
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="./index.html#portfolio">
-											PORTFOLIO
-										</a>
-									<li>
-										<a href="./index.html#news">
-											NEWS
-										</a>
-									</li>
-									<li>
-										<a href="./index.html#clients">
-											CLIENTS
-										</a>
-									</li>
-									<li>
-										<a href="./index.html#contact">
-											CONTACT
-										</a>
-									</li>
-									<li>
-										<a href="login.html">
-											LOGIN
+									<li class="dropdown">
+										<a href="corporate.html">
+											CORPORATE
 										</a>
 									</li>
 								</ul>
+							</li>
+							<li>
+								<a href="./index.html#portfolio">
+									PORTFOLIO
+								</a>
+							<li>
+								<a href="./index.html#news">
+									NEWS
+								</a>
+							</li>
+							<li>
+								<a href="./index.html#clients">
+									CLIENTS
+								</a>
+							</li>
+							<li>
+								<a href="./index.html#contact">
+									CONTACT
+								</a>
+							</li>
+							<li>
+								<a href="login.html">
+									LOGIN
+								</a>
+							</li>
+						</ul>
 
-							</nav>
+					</nav>
+				</div>
+
+			</div>
+		</header>
+		<!-- /Top Nav -->
+
+	</div>
+
+	<section class="page-header">
+		<div class="container">
+
+			<h1>LOGIN</h1>
+
+		</div>
+	</section>
+	<!-- /PAGE HEADER -->
+
+
+	<!-- -->
+	<section>
+		<div class="container">
+			
+			<div class="row">
+
+				<div class="col-md-6 offset-md-3">
+
+					<!-- ALERT -->
+					<div class="alert alert-mini alert-danger mb-30" id="login_err">
+						<strong>Oh snap!</strong> Login Incorrect!
+					</div><!-- /ALERT -->
+
+					<div class="box-static box-border-top p-30">
+						<div class="box-title mb-30">
+							<h2 class="fs-20">I'm a returning customer</h2>
 						</div>
 
+						<form class="m-0" method="post" action="#" autocomplete="off">
+							<div class="clearfix">
+								
+								<!-- Email -->
+								<div class="form-group">
+									<input type="text" name="email" class="form-control" placeholder="Email" required="">
+								</div>
+								
+								<!-- Password -->
+								<div class="form-group">
+									<input type="password" name="password" class="form-control" placeholder="Password" required="">
+								</div>
+									
+							</div>
+							
+							<div class="row">
+								
+								<div class="col-md-6 col-sm-6 col-6">
+									
+									<!-- Inform Tip -->                                        
+									<div class="form-tip pt-20">
+										<a class="no-text-decoration fs-13 mt-10 block" href="#">Forgot Password?</a>
+									</div>
+									
+								</div>
+								
+								<div class="col-md-6 col-sm-6 col-6 text-right">
+
+									<button class="btn btn-primary">OK, LOG IN</button>
+
+								</div>
+								
+							</div>
+							
+						</form>
+
 					</div>
-				</header>
-				<!-- /Top Nav -->
+					
+					<div class="mt-30 text-center">
+						<a href="page-register-1.html"><strong>Create Account</strong></a>
+
+					</div>
+
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!-- / -->
+
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
+
+
+			<div class="row">
+
+			<!-- col #1 -->
+			<div class="col-md-8">
+
+				<h3 class="letter-spacing-1">WHY US?</h3>
+
+				<!-- Small Description -->
+				<p>
+				A family owned business in operation since 1976 is a business you can trust. We believe that the quality of our products and services
+				speak for themselves, and we think you'll agree. Find out why so many have made <strong>Rocket Elevators</strong> their trusted consultant for everything elevators.
+				</p>
+				<h2>1 (800) 555-1234</h2>
+			</div>
+			<!-- /col #1 -->
+
+			<!-- col #2 -->
+			<div class="col-md-4">
+				<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+				<!-- Newsletter Form -->
+				<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+				<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+					<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+					<span class="input-group-btn">
+					<button class="btn btn-success" type="submit">Subscribe</button>
+					</span>
+				</div>
+				</form>
+				<!-- /Newsletter Form -->
+
+
+			</div>
+			<!-- /col #2 -->
 
 			</div>
 
-			<section class="page-header">
-				<div class="container">
-
-					<h1>LOGIN</h1>
-
-				</div>
-			</section>
-			<!-- /PAGE HEADER -->
-
-
-			<!-- -->
-			<section>
-				<div class="container">
-					
-					<div class="row">
-
-						<div class="col-md-6 offset-md-3">
-
-							<!-- ALERT -->
-							<div class="alert alert-mini alert-danger mb-30" id="login_err">
-								<strong>Oh snap!</strong> Login Incorrect!
-							</div><!-- /ALERT -->
-
-							<div class="box-static box-border-top p-30">
-								<div class="box-title mb-30">
-									<h2 class="fs-20">I'm a returning customer</h2>
-								</div>
-
-								<form class="m-0" method="post" action="#" autocomplete="off">
-									<div class="clearfix">
-										
-										<!-- Email -->
-										<div class="form-group">
-											<input type="text" name="email" class="form-control" placeholder="Email" required="">
-										</div>
-										
-										<!-- Password -->
-										<div class="form-group">
-											<input type="password" name="password" class="form-control" placeholder="Password" required="">
-										</div>
-											
-									</div>
-									
-									<div class="row">
-										
-										<div class="col-md-6 col-sm-6 col-6">
-											
-											<!-- Inform Tip -->                                        
-											<div class="form-tip pt-20">
-												<a class="no-text-decoration fs-13 mt-10 block" href="#">Forgot Password?</a>
-											</div>
-											
-										</div>
-										
-										<div class="col-md-6 col-sm-6 col-6 text-right">
-
-											<button class="btn btn-primary">OK, LOG IN</button>
-
-										</div>
-										
-									</div>
-									
-								</form>
-
-							</div>
-							
-							<div class="mt-30 text-center">
-								<a href="page-register-1.html"><strong>Create Account</strong></a>
-
-							</div>
-
-						</div>
-					</div>
-					
-				</div>
-			</section>
-			<!-- / -->
-
-
-			<!-- FOOTER -->
-            <footer id="footer">
-                <div class="container">
-        
-        
-                  <div class="row">
-        
-                    <!-- col #1 -->
-                    <div class="col-md-8">
-        
-                      <h3 class="letter-spacing-1">WHY US?</h3>
-        
-                      <!-- Small Description -->
-                      <p>
-                        A family owned business in operation since 1976 is a business you can trust. We believe that the quality of our products and services
-                        speak for themselves, and we think you'll agree. Find out why so many have made <strong>Rocket Elevators</strong> their trusted consultant for everything elevators.
-                      </p>
-                      <h2>1 (800) 555-1234</h2>
-                    </div>
-                    <!-- /col #1 -->
-        
-                    <!-- col #2 -->
-                    <div class="col-md-4">
-                      <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-        
-                      <!-- Newsletter Form -->
-                      <p>Subscribe to Our Newsletter to get Important News & Offers</p>
-        
-                      <form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-                        <div class="input-group">
-                          <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                          <input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-                          <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit">Subscribe</button>
-                          </span>
-                        </div>
-                      </form>
-                      <!-- /Newsletter Form -->
-        
-        
-                    </div>
-                    <!-- /col #2 -->
-        
-                  </div>
-        
-        
-                </div>
-        
-                <div class="copyright">
-                  <div class="container">
-                    <ul class="float-right m-0 list-inline mobile-block">
-                      <li>Terms &amp; Conditions</li>
-                      <li>&bull;</li>
-                      <li>Privacy</li>
-                    </ul>
-                    &copy; All Rights Reserved, Rocket Elevators S.E.N.C.
-                  </div>
-                </div>
-        
-              </footer>
-              <!-- /FOOTER -->
-
 
 		</div>
-		<!-- /wrapper -->
+
+		<div class="copyright">
+			<div class="container">
+			<ul class="float-right m-0 list-inline mobile-block">
+				<li>Terms &amp; Conditions</li>
+				<li>&bull;</li>
+				<li>Privacy</li>
+			</ul>
+			&copy; All Rights Reserved, Rocket Elevators S.E.N.C.
+			</div>
+		</div>
+
+		</footer>
+		<!-- /FOOTER -->
+
+
+</div>
+<!-- /wrapper -->
+<script>var plugin_path = 'assets/plugins/';</script>
+<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script>
+	$("#login_err").hide();
+</script>
+<script src="assets/js/quote.js"></script>
