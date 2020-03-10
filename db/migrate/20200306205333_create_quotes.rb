@@ -5,7 +5,6 @@ class CreateQuotes < ActiveRecord::Migration[5.2]
       t.string :project_type
       t.string :num_elevators
       t.string :product
-
       t.timestamps
     end
   end

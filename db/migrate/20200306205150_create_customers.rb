@@ -1,14 +1,17 @@
 class CreateCustomers < ActiveRecord::Migration[5.2]
   def change
     create_table :customers do |t|
-      t.string :fname
-      t.string :lname
-      t.string :email
-      t.string :bname
-      t.string :primary
-      t.string :secondary
-
-      t.timestamps
+      t.integer :PersonID
+      t.date :DateCreated
+      t.string :Company
+      t.string :CompanyHQAdress
+      t.string :CompanyContactFullName
+      t.string :CompanyContactPhone
+      t.string :CompanyContactEmail
+      t.text :CompanyDescription
+      t.string :STOfullname
+      t.string :TOphone
+      t.string :TMemail
     end
   end
 end
