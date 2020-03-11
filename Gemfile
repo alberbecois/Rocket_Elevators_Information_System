@@ -89,3 +89,6 @@ gem 'draper'
 gem 'pundit'
 
 gem 'herb'
+
+# Faker
+gem 'faker'

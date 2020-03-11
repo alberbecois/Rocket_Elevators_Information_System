@@ -49,5 +49,5 @@ sleep .3
 echo ''
 echo ''
 echo ''
-# Run Rails server
-rails server
+# Run Rails server available in local network in port 8000
+rails server -b 0.0.0.0 -p 8000
