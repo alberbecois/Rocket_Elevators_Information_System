@@ -232,22 +232,32 @@ function getQuote(){
 // Generate objects to send to Rails Controller
 function saveQuote(){
     var selectedElevator = document.querySelector('input[name="elevatortype"]:checked').value;
-    var myCustomer = {
-        "fname":document.getElementById("fname").value,
-        "lname":document.getElementById("lname").value,
-        "email":document.getElementById("email").value,
-        "bname":document.getElementById("bname").value,
-        "primary":document.getElementById("primary").value,
-        "secondary":document.getElementById("secondary").value
+    var myCustomer = 
+    {
+        "customer": {
+            "fname": document.getElementById("fname").value,
+            "lname": document.getElementById("lname").value,
+            "email": document.getElementById("email").value,
+            "bname": document.getElementById("bname").value,
+            "primary": document.getElementById("primary").value,
+            "secondary": document.getElementById("secondary").value
+        }
     }
-    var myQuote = {
-        "project_type":selection,
-        "num_elevators":quotedElevators,
-        "product":selectedElevator
-    }
+
     var myCustomerID;
-    console.log(myCustomer);
-    console.log(myQuote);
+
+    $.post("http://localhost:3000/customers", myCustomer, function(data){
+        myCustomerID = data.theid;
+        console.log(data.message);
+        var myQuote = {
+            "customer_id": myCustomerID,
+            "project_type": selection,
+            "num_elevators": quotedElevators,
+            "product": selectedElevator
+        }
+        console.log(myQuote);
+    });
+
 }
 
 // Displays Final Quote

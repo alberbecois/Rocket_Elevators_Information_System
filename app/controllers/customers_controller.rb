@@ -1,25 +1,16 @@
 class CustomersController < ApplicationController
     skip_before_action :verify_authenticity_token
-    wrap_parameters :customer, include: [:fname, :lname, :email, :bname, :primary, :secondary]
-    def index
-        @customers = Customer.order('id');
-        render json: {status: 'SUCCESS', message: 'Loaded customers', data:customers},status:ok
-    end
+    wrap_parameters format: [:json, :xml, :url_encoded_form, :multipart_form]
+   
     def create
-        @query = Customer.where(:email === params[:email])
-        if @query.empty? == true
-            redirect_to action: "new", status: 301
+        @query = Customer.where(email: params[:customer][:email]).take
+        if @query == nil
+            p = params[:customer].permit!
+            Customer.create(p)
+            render json: {status: 'SUCCESS', message: 'New customer', theid: Customer.last.id}
         else
-            @theid = @query.first.id
-            render json: {status: 'SUCCESS', message: 'Existing customer', theid:@theid}
+            @theid = @query.id
+            render json: {status: 'SUCCESS', message: 'Existing customer', theid: @theid}
         end
-    end
-    def new
-        customer = Customer.new(customer_params)
-        render json: {status: 'SUCCESS', message: 'New customer', theid: Customer.last.id}
-    end
-
-    def customer_params
-        params.permit(:fname, :lname, :email, :bname, :primary, :secondary)
     end
 end
