@@ -1,11 +1,33 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  project_type: MyString
-  num_elevators: MyString
-  product: MyString
+  business: MyString
+  fullname: MyString
+  email: MyString
+  build_type: MyString
+  product_line: 1
+  nb_cages: 1
+  nb_appartment: 1
+  nb_floors: 1
+  nb_base: 1
+  nb_occupants: 1
+  elevator_units: 1
+  installation_fe: 1
+  p_line_selection: 1
+  sum_total: 1
 
 two:
-  project_type: MyString
-  num_elevators: MyString
-  product: MyString
+  business: MyString
+  fullname: MyString
+  email: MyString
+  build_type: MyString
+  product_line: 1
+  nb_cages: 1
+  nb_appartment: 1
+  nb_floors: 1
+  nb_base: 1
+  nb_occupants: 1
+  elevator_units: 1
+  installation_fe: 1
+  p_line_selection: 1
+  sum_total: 1

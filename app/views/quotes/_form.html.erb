@@ -1,0 +1,87 @@
+<%= form_with(model: quote, local: true) do |form| %>
+  <% if quote.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(quote.errors.count, "error") %> prohibited this quote from being saved:</h2>
+
+      <ul>
+      <% quote.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :business %>
+    <%= form.text_field :business %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fullname %>
+    <%= form.text_field :fullname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :build_type %>
+    <%= form.text_field :build_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :product_line %>
+    <%= form.number_field :product_line %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nb_cages %>
+    <%= form.number_field :nb_cages %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nb_appartment %>
+    <%= form.number_field :nb_appartment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nb_floors %>
+    <%= form.number_field :nb_floors %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nb_base %>
+    <%= form.number_field :nb_base %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nb_occupants %>
+    <%= form.number_field :nb_occupants %>
+  </div>
+
+  <div class="field">
+    <%= form.label :elevator_units %>
+    <%= form.number_field :elevator_units %>
+  </div>
+
+  <div class="field">
+    <%= form.label :installation_fe %>
+    <%= form.number_field :installation_fe %>
+  </div>
+
+  <div class="field">
+    <%= form.label :p_line_selection %>
+    <%= form.number_field :p_line_selection %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sum_total %>
+    <%= form.number_field :sum_total %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

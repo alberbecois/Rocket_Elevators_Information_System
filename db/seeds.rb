@@ -6,4 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 #AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
-Customer.create!(fname: 'Marc-Olivier', lname: 'Groleau', email: 'mgroleau@test.com', bname: 'CodeBoxx', primary: '514-555-5555') if Rails.env.development?
+
+20.times do
+    Lead.create(
+        full_name: Faker::FunnyName.unique.name_with_initial,
+        business: Faker::Company.name,
+        email: Faker::Internet.email,
+        phone: Faker::PhoneNumber.phone_number,
+        project_name: Faker::Address.community,
+        description: Faker::Lorem.sentence,
+        department: ["Residential","Corporate","Hybrid"].sample,
+        message: Faker::Lorem.paragraph,
+        created_at: Faker::Date.between(from: 700.days.ago, to: Date.today),
+        updated_at: Faker::Date.between(from: 700.days.ago, to: Date.today)
+    )
+end

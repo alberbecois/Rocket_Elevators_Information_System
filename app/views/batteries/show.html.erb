@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Battery type:</strong>
+  <%= @battery.battery_type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @battery.status %>
+</p>
+
+<p>
+  <strong>Commissioning date:</strong>
+  <%= @battery.commissioning_date %>
+</p>
+
+<p>
+  <strong>Last inspection date:</strong>
+  <%= @battery.last_inspection_date %>
+</p>
+
+<p>
+  <strong>Operation certificate:</strong>
+  <%= @battery.operation_certificate %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @battery.information %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @battery.notes %>
+</p>
+
+<p>
+  <strong>Building:</strong>
+  <%= @battery.building %>
+</p>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @battery.employee %>
+</p>
+
+<%= link_to 'Edit', edit_battery_path(@battery) %> |
+<%= link_to 'Back', batteries_path %>

@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Quotes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Business</th>
+      <th>Fullname</th>
+      <th>Email</th>
+      <th>Build type</th>
+      <th>Product line</th>
+      <th>Nb cages</th>
+      <th>Nb appartment</th>
+      <th>Nb floors</th>
+      <th>Nb base</th>
+      <th>Nb occupants</th>
+      <th>Elevator units</th>
+      <th>Installation fe</th>
+      <th>P line selection</th>
+      <th>Sum total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quotes.each do |quote| %>
+      <tr>
+        <td><%= quote.business %></td>
+        <td><%= quote.fullname %></td>
+        <td><%= quote.email %></td>
+        <td><%= quote.build_type %></td>
+        <td><%= quote.product_line %></td>
+        <td><%= quote.nb_cages %></td>
+        <td><%= quote.nb_appartment %></td>
+        <td><%= quote.nb_floors %></td>
+        <td><%= quote.nb_base %></td>
+        <td><%= quote.nb_occupants %></td>
+        <td><%= quote.elevator_units %></td>
+        <td><%= quote.installation_fe %></td>
+        <td><%= quote.p_line_selection %></td>
+        <td><%= quote.sum_total %></td>
+        <td><%= link_to 'Show', quote %></td>
+        <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
+        <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Quote', new_quote_path %>
