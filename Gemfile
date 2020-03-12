@@ -90,5 +90,5 @@ gem 'pundit'
 
 gem 'herb'
 
-# Faker
+# Faker for fake data
 gem 'faker'

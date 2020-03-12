@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Business:</strong>
+  <%= @quote.business %>
+</p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @quote.fullname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @quote.email %>
+</p>
+
+<p>
+  <strong>Build type:</strong>
+  <%= @quote.build_type %>
+</p>
+
+<p>
+  <strong>Product line:</strong>
+  <%= @quote.product_line %>
+</p>
+
+<p>
+  <strong>Nb cages:</strong>
+  <%= @quote.nb_cages %>
+</p>
+
+<p>
+  <strong>Nb appartment:</strong>
+  <%= @quote.nb_appartment %>
+</p>
+
+<p>
+  <strong>Nb floors:</strong>
+  <%= @quote.nb_floors %>
+</p>
+
+<p>
+  <strong>Nb base:</strong>
+  <%= @quote.nb_base %>
+</p>
+
+<p>
+  <strong>Nb occupants:</strong>
+  <%= @quote.nb_occupants %>
+</p>
+
+<p>
+  <strong>Elevator units:</strong>
+  <%= @quote.elevator_units %>
+</p>
+
+<p>
+  <strong>Installation fe:</strong>
+  <%= @quote.installation_fe %>
+</p>
+
+<p>
+  <strong>P line selection:</strong>
+  <%= @quote.p_line_selection %>
+</p>
+
+<p>
+  <strong>Sum total:</strong>
+  <%= @quote.sum_total %>
+</p>
+
+<%= link_to 'Edit', edit_quote_path(@quote) %> |
+<%= link_to 'Back', quotes_path %>
