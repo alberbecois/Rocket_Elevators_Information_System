@@ -231,22 +231,85 @@ function getQuote(){
 
 // Generate objects to send to Rails Controller
 function saveQuote(){
+
+    // Quote values
     var selectedElevator = document.querySelector('input[name="elevatortype"]:checked').value;
-    var myCustomer = 
+    var nb_cages;
+    var nb_appartment;
+    var nb_floors;
+    var nb_base;
+    var nb_occupants;
+    var elevator_units;
+    var installation_fe;
+    var p_line_selection;
+    var sum_total;
+
+    if (selection === "residential"){
+        nb_cages = "";
+        nb_appartment = document.getElementById("resapartments").value;
+        nb_floors = document.getElementById("resfloors").value;
+        nb_base = "";
+        nb_occupants = "";
+        elevator_units = document.getElementById("restotal").innerHTML;
+        installation_fe = document.getElementById("installationprice").innerHTML;
+        p_line_selection = document.getElementById("productprice").innerHTML;
+        sum_total = document.getElementById("totalprice").innerHTML;
+    } else if (selection === "commercial"){
+        nb_cages = document.getElementById("commercialelevators").value;
+        nb_appartment = "";
+        nb_floors = "";
+        nb_base = "";
+        nb_occupants = "";
+        elevator_units = document.getElementById("restotal").innerHTML;
+        installation_fe = document.getElementById("installationprice").innerHTML;
+        p_line_selection = document.getElementById("productprice").innerHTML;
+        sum_total = document.getElementById("totalprice").innerHTML;
+    } else if (selection === "corporate"){
+        nb_cages = "";
+        nb_appartment = "";
+        nb_floors = document.getElementById("corporatefloors").value;
+        nb_base = document.getElementById("corporatebasements").value;
+        nb_occupants = document.getElementById("corporateoccupants").value;
+        elevator_units = document.getElementById("restotal").innerHTML;
+        installation_fe = document.getElementById("installationprice").innerHTML;
+        p_line_selection = document.getElementById("productprice").innerHTML;
+        sum_total = document.getElementById("totalprice").innerHTML;
+    } else {
+        nb_cages = "";
+        nb_appartment = "";
+        nb_floors = document.getElementById("hybridfloors").value;
+        nb_base = document.getElementById("hybridbasements").value;
+        nb_occupants = document.getElementById("hybridoccupants").value;
+        elevator_units = document.getElementById("restotal").innerHTML;
+        installation_fe = document.getElementById("installationprice").innerHTML;
+        p_line_selection = document.getElementById("productprice").innerHTML;
+        sum_total = document.getElementById("totalprice").innerHTML;
+    }
+
+    var myQuote = 
     {
-        "customer": {
-            "fname": document.getElementById("fname").value,
-            "lname": document.getElementById("lname").value,
+        "quote": {
+            "business": document.getElementById("bname").value,
+            "fullname": `${document.getElementById("fname").value} ${document.getElementById("lname").value}`,
             "email": document.getElementById("email").value,
-            "bname": document.getElementById("bname").value,
-            "primary": document.getElementById("primary").value,
-            "secondary": document.getElementById("secondary").value
+            "build_type": selection,
+            "product_line": selectedElevator,
+            "nb_cages": nb_cages,
+            "nb_appartment": nb_appartment,
+            "nb_floors": nb_floors,
+            "nb_base": nb_base,
+            "nb_occupants": nb_occupants,
+            "nb_floors": nb_floors,
+            "elevator_units": elevator_units,
+            "installation_fe": installation_fe,
+            "p_line_selection": p_line_selection,
+            "sum_total": sum_total
         }
     }
 
-    var myCustomerID;
+    console.log(myQuote);
 
-    $.post("http://localhost:3000/customers", myCustomer, function(data){
+    /*$.post("http://localhost:3000/customers", myCustomer, function(data){
         myCustomerID = data.theid;
         console.log(data.message);
         var myQuote = {
@@ -256,7 +319,7 @@ function saveQuote(){
             "product": selectedElevator
         }
         console.log(myQuote);
-    });
+    });*/
 
 }
 
