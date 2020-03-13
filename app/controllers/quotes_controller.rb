@@ -3,7 +3,7 @@ class QuotesController < InheritedResources::Base
   wrap_parameters format: [:json, :xml, :url_encoded_form, :multipart_form]
 
   def create
-    p = JSON.parse(params:).permit!
+    p = JSON.parse(params).permit!
     Quote.create(p)
     render json: {status: 'SUCCESS', message: 'New quote created', theid: Quote.last.id}
   end

@@ -73,7 +73,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'owlcarousel-rails'
-gem 'owlcarousel-rails'
 gem "font-awesome-rails"
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'nav'
@@ -92,3 +91,6 @@ gem 'herb'
 
 # Faker for fake data
 gem 'faker'
+
+# Postgres gem
+gem 'pg', '~> 0.18.4'
