@@ -1,0 +1,197 @@
+<!-- wrapper -->
+<div id="wrapper">
+
+	<div id="header" class="navbar-toggleable-md sticky clearfix">
+
+	<!-- TOP NAV -->
+		<header id="topNav">
+			<div class="container">
+
+				<!-- Mobile Menu Button -->
+				<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+					<i class="fa fa-bars"></i>
+				</button>
+
+				<!-- BUTTONS -->
+				<ul class="float-right nav nav-pills nav-second-main">
+
+				</ul>
+				<!-- /BUTTONS -->
+
+				<!-- Logo -->
+				<a class="logo float-left mt-10 mb-10" href="index.html">
+					<img src="assets/R2.png" alt="Rocket Elevator Logo" />
+				</a>
+
+				<!--
+					Top Nav
+					AVAILABLE CLASSES:
+					submenu-dark = dark sub menu
+				-->
+				<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark mt-10">
+					<nav class="nav-main">
+
+						<!--
+							NOTE
+							For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+							Direct Link Example:
+							<li>
+								<a href="#">HOME</a>
+							</li>
+						-->
+						<ul id="topMain" class="nav nav-pills nav-main">
+							<li>
+								<a href="index.html">
+									HOME
+								</a>
+							</li>
+							<li class="dropdown active"><!-- PAGES -->
+								<a class="dropdown-toggle" href="./index.html#services">
+									SERVICES
+								</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown">
+										<a href="residential.html">
+											RESIDENTIAL
+										</a>
+									</li>
+									<li class="dropdown">
+										<a href="corporate.html">
+											CORPORATE
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="./index.html#portfolio">
+									PORTFOLIO
+								</a>
+							<li>
+								<a href="./index.html#news">
+									NEWS
+								</a>
+							</li>
+							<li>
+								<a href="./index.html#clients">
+									CLIENTS
+								</a>
+							</li>
+							<li>
+								<a href="./index.html#contact">
+									CONTACT
+								</a>
+							</li>
+							<li>
+								<a href="login.html">
+									LOGIN
+								</a>
+							</li>
+						</ul>
+
+					</nav>
+				</div>
+
+			</div>
+		</header>
+		<!-- /Top Nav -->
+
+
+
+
+				</div>
+			</section> 
+
+			<!-- -->
+			<section>
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-6 offset-md-3">
+
+							<div class="toggle toggle-transparent toggle-accordion toggle-noicon">
+
+								<div class="toggle active">
+									<label class="fs-20"><i class="fa fa-leaf"></i> &nbsp; I'm a returning customer</label>
+									<div class="toggle-content">
+
+
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+
+    
+
+
+ <div class="field">
+    <%= f.label :username %><br />
+    <i class="ico-append fa fa-envelope"></i>
+    <%= f.username_field :username, autofocus: true, autocomplete: "username" %>
+   <b class="tooltip tooltip-bottom-right">What should we call you?</b>
+  </div>
+ 
+ <!-- Email -->
+  <div class="field">
+    <%= f.label :email %><br />
+    <i class="ico-append fa fa-envelope"></i>
+    <%= f.email_field :email, required: true, autofocus: true, autocomplete: "email" %>
+   <b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+  </div>
+<!-- Password -->
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br /> 
+    <i class="ico-append fa fa-lock"></i>
+    <%= f.password_field :password, required: true, autocomplete: "new-password" %>
+    <b class="tooltip tooltip-bottom-right">Type your account password</b>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <i class="ico-append fa fa-lock"></i>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %> 
+    <b class="tooltip tooltip-bottom-right">Re-type your account password</b>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+</div>
+  </div>
+    </div>
+      </div>
+        </div>
+            </div>
+
+		
+			<div class="container">
+			<ul class="float-right m-0 list-inline mobile-block">
+				<li>Terms &amp; Conditions</li>
+				<li>&bull;</li>
+				<li>Privacy</li>
+			</ul>
+			&copy; All Rights Reserved, Rocket Elevators S.E.N.C.
+			</div>
+		</div>
+
+		</footer>
+		<!-- /FOOTER -->
+
+
+</div>
+<!-- /wrapper -->
+<script>var plugin_path = 'assets/plugins/';</script>
+<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script>
+	$("#login_err").hide();
+</script>
+<script src="assets/js/quote.js"></script>
+ 
+
