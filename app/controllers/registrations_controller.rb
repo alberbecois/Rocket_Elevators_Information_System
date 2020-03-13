@@ -1,9 +1,16 @@
 class RegistrationsController < Devise::RegistrationsController
 
+    before_action :authenticate_user!
+
+    def index
+      @user = current_user
+    end
+
+
     private
 
     def sign_up_params
-        params.require(user).permit(
+        params.require(:user).permit(
             :email, 
             :password, 
             :password_confirmation,
