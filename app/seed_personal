@@ -1,0 +1,34 @@
+FAKE DATA FOR LEAD
+
+20.times do
+    Lead.create(
+        full_name: Faker::FunnyName.unique.name_with_initial,
+        business: Faker::Company.name,
+        email: Faker::Internet.email,
+        phone: Faker::PhoneNumber.phone_number,
+        project_name: Faker::Address.community,
+        description: Faker::Lorem.sentence,
+        department: ["Residential","Corporate","Hybrid"].sample,
+        message: Faker::Lorem.paragraph,
+        created_at: Faker::Date.between(from: 700.days.ago, to: Date.today),
+        updated_at: Faker::Date.between(from: 700.days.ago, to: Date.today)
+    )
+end
+
+FAKE DATA FOR USERS
+
+
+20.times do
+    User.create(
+        email: Faker::Internet.email,
+        encrypted_password: Faker::Color.hex_color,
+        first_name: Faker::Name.first_name,
+        last_name: Faker::Name.last_name,
+        phone: Faker::PhoneNumber.cell_phone,
+        business: Faker::Company.name,
+        created_at: Faker::Date.between(from: 700.days.ago, to: Date.today),
+        updated_at: Faker::Date.between(from: 700.days.ago, to: Date.today)
+    )
+end
+
+    

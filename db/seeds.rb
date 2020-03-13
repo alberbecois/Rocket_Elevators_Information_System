@@ -8,15 +8,13 @@
 #AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
 
 20.times do
-    Lead.create(
-        full_name: Faker::FunnyName.unique.name_with_initial,
-        business: Faker::Company.name,
+    User.create(
         email: Faker::Internet.email,
-        phone: Faker::PhoneNumber.phone_number,
-        project_name: Faker::Address.community,
-        description: Faker::Lorem.sentence,
-        department: ["Residential","Corporate","Hybrid"].sample,
-        message: Faker::Lorem.paragraph,
+        encrypted_password: Faker::Color.hex_color,
+        first_name: Faker::Name.first_name,
+        last_name: Faker::Name.last_name,
+        phone: Faker::PhoneNumber.cell_phone,
+        business: Faker::Company.name,
         created_at: Faker::Date.between(from: 700.days.ago, to: Date.today),
         updated_at: Faker::Date.between(from: 700.days.ago, to: Date.today)
     )
