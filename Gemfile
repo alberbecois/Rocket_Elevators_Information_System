@@ -91,6 +91,8 @@ gem 'herb'
 
 # Faker
 gem 'faker' 
+gem "cancan"
+
 
 group :production do 
 gem 'pg', '~> 0.18.4'

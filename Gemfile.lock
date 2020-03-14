@@ -86,6 +86,7 @@ GEM
       railties (>= 3.1)
     builder (3.2.4)
     byebug (11.1.1)
+    cancan (1.6.10)
     cancancan (3.0.2)
     capistrano (3.12.1)
       airbrussh (>= 1.0.0)
@@ -365,6 +366,7 @@ DEPENDENCIES
   bootstrap-glyphicons
   bootstrap-social-rails
   byebug
+  cancan
   cancancan
   capistrano (~> 3.10)
   capistrano-bundler (>= 1.1.0)
