@@ -55,6 +55,7 @@ group :development do
   gem 'capistrano-bundler', '>= 1.1.0'
   gem 'rvm1-capistrano3', require: false
   gem 'capistrano3-puma'
+  gem 'capistrano-rake', require: false
 end
 
 group :test do
@@ -92,3 +93,9 @@ gem 'herb'
 
 # Faker for fake data
 gem 'faker'
+
+# pg for postgres
+gem 'pg', '~> 0.18.4'
+
+# for automatization whenever
+gem 'whenever', '~> 1.0'

@@ -30,14 +30,34 @@ echo ''
 echo ''
 sleep .60
 
-mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM users;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp/users.csv
-mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM customers;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp/customers.csv
-mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM employees;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp/employees.csv
-mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM batteries;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp/batteries.csv
-mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM columns;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp/columns.csv
-mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM elevators;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp/elevators.csv
-mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM leads;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp/leads.csv
-mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM quotes;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp/quotes.csv
-mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM building_details;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp/building_details.csv
-mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM buildings;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp/buildings.csv
-mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM addresses;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp/addresses.csv
+mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT id, created_at, business, email, project_name FROM leads;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/leads.csv
+mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT id, created_at, business, email, nb_cages FROM quotes;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/quotes.csv
+
+
+#mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM users;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/users_full.csv
+#mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM customers;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/customers_full.csv
+#mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM employees;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/employees_full.csv
+#mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM batteries;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/batteries_full.csv
+#mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM columns;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/columns_full.csv
+#mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM elevators;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/elevators_full.csv
+#mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM leads;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/leads_full.csv
+#mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM quotes;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/quotes_full.csv
+#mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM building_details;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/building_details_full.csv
+#mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM buildings;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/buildings_full.csv
+#mysql -ucopydb -pCodeBoxx myapp_development -B -e "SELECT * FROM addresses;" 2>/dev/null | sed "s/'/\'/;s/\t/\",\"/g;s/^/\"/;s/$/\"/;s/\n//g" > /home/jachavar/Rocket_Elevators_Information_System/tmp_data/addresses_full.csv
+
+sleep 2m 30s
+psql -h localhost -d postgres -U dbpostgresql -c "\TRUNCATE TABLE factquotes RESTART IDENTITY"
+psql -h localhost -d postgres -U dbpostgresql -c "\TRUNCATE TABLE factcontact RESTART IDENTITY"
+
+
+
+sleep 2m 30s
+
+psql -h localhost -d postgres -U dbpostgresql -c "\COPY factquotes FROM '/home/jachavar/Rocket_Elevators_Information_System/tmp_data/quotes.csv' with csv header"
+psql -h localhost -d postgres -U dbpostgresql -c "\COPY factcontact FROM '/home/jachavar/Rocket_Elevators_Information_System/tmp_data/leads.csv' with csv header"
+
+
+sleep 5m
+cd /home/jachavar/Rocket_Elevators_Information_System/tmp_data/
+rm -f -r *.csv

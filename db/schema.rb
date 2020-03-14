@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_12_173120) do
+ActiveRecord::Schema.define(version: 2020_03_13_225436) do
 
   create_table "active_admin_comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "namespace"
@@ -115,6 +115,8 @@ ActiveRecord::Schema.define(version: 2020_03_12_173120) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "address_id"
+    t.index ["address_id"], name: "fk_rails_3f9404ba26"
     t.index ["user_id"], name: "index_customers_on_user_id"
   end
 
@@ -194,6 +196,7 @@ ActiveRecord::Schema.define(version: 2020_03_12_173120) do
   add_foreign_key "buildings", "addresses"
   add_foreign_key "buildings", "customers"
   add_foreign_key "columns", "batteries"
+  add_foreign_key "customers", "addresses"
   add_foreign_key "customers", "users"
   add_foreign_key "elevators", "columns"
 end
