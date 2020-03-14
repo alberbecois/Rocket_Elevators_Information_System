@@ -4,7 +4,7 @@ namespace :export do
     desc "export to postgresql"
     task transfer: :environment do
 
-        connection = PG::Connection.open(host: "localhost", port: 5432, dbname: "postgres", user: "dbpostgresql", password: "123456789")
+        connection = PG::Connection.open(host: "codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com", port: 5432, dbname: "JorgeChavarriaga", user: "codeboxx", password: "Codeboxx1!")
         puts "#{connection}: Connection established"
 
         connection.exec("TRUNCATE factquotes RESTART IDENTITY")
