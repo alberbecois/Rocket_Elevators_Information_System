@@ -1,0 +1,11 @@
+rails g scaffold address address_type:string address:string appt_no:string city:string post_code:string country:string notes:text
+rails g scaffold user email:string encrypted_password:string first_name:string last_name:string phone:string business:string
+rails g scaffold customer business:string headquarter_address:string contact_full_name:string contact_phone:string contact_email:string business_description:string tech_full_name:string tech_phone:string tech_email:string user:references
+rails g scaffold building admin_full_name:string admin_email:string admin_phone:string tech_full_name:string tech_email:string tech_phone:string customer:references address:references
+rails g scaffold lead full_name:string business:string email:string phone:string project_name:string description:string department:string message:text file:binary
+rails g scaffold building_Detail information_key:string value:string building:references
+rails g scaffold employee first_name:string last_name:string title:string email:string phone:string
+rails g scaffold battery battery_type:string status:string commissioning_date:date last_inspection_date:date operation_certificate:string information:text notes:text building:references employee:references
+rails g scaffold quote business:string fullname:string email:string build_type:string product_line:integer nb_cages:integer nb_appartment:integer nb_floors:integer nb_base:integer nb_occupants:integer elevator_units:integer installation_fe:integer p_line_selection:integer sum_total:integer
+rails g scaffold column column_type:string floors:integer column_status:string information:text notes:text battery:references
+rails g scaffold elevator serial_number:integer model:string elevatory_type:string status:string start_date:date last_check:date certificate:string information:text notes:text column:references

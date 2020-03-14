@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  serial_number: 1
+  model: MyString
+  elevatory_type: MyString
+  status: MyString
+  start_date: 2020-03-12
+  last_check: 2020-03-12
+  certificate: MyString
+  information: MyText
+  notes: MyText
+  column: one
+
+two:
+  serial_number: 1
+  model: MyString
+  elevatory_type: MyString
+  status: MyString
+  start_date: 2020-03-12
+  last_check: 2020-03-12
+  certificate: MyString
+  information: MyText
+  notes: MyText
+  column: two
