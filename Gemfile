@@ -87,7 +87,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'draper'
 gem 'pundit'
-
+gem 'cancan'
 gem 'herb'
 
 # Faker for fake data
